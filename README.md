@@ -6,7 +6,7 @@ SSH via key
     ssh -i .ssh/id_ed25519 <USER>@<IP_ADDRESS>
 ```
 
-Undefine domain virsh
+If something crashes durring dev, `undefine domain` virsh
 ```shell
     virsh undefine <DOMAIN_NAME>
 ```
@@ -19,6 +19,6 @@ Visulize using `graphviz`:
 
 Destroy all:
 ```shell
-    sudo terraform destroy -auto-approve
+    sudo tofu destroy -auto-approve
 ```
 
