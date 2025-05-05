@@ -32,7 +32,7 @@ def main():
         "user_name": prompt_input("Enter username", default="ubuntu"),
         "user_password": prompt_password(),
         "user_groups": prompt_input("Enter groups (comma-separated)", default="users,admin"),
-        "image_name": prompt_input("Enter image name", default="noble-server-cloudimg-amd64.img"),
+        "image_name": prompt_input("Enter path to image", default="tf/assets/noble-server-cloudimg-amd64.img"),
         "format": prompt_input("Enter image format", default="qcow2"),
     }
 
