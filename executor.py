@@ -20,7 +20,7 @@ def prompt_password():
 
 def main():
 
-    file_path = input("Enter the path to 'variables.tf': ")
+    # file_path = input("Enter the path to 'variables.tf': ")
 
     variables = {
         "hostname": prompt_input("Enter libvirt domain name", default="test"),
@@ -36,7 +36,7 @@ def main():
         "format": prompt_input("Enter image format", default="qcow2"),
     }
 
-    with open(file_path, "w") as tf_file:
+    with open("tf/variables.tf", "w") as tf_file:
         for var_name, value in variables.items():
             tf_file.write(f'variable "{var_name}" {{\n')
             if isinstance(value, int):
