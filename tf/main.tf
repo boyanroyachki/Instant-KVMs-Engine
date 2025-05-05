@@ -5,7 +5,7 @@
 resource "libvirt_volume" "os_image_base" {
   name   = "${var.hostname}-os_image_base"
   pool   = "default"
-  source = "${path.module}/assets/${var.image_name}"
+  source = "${var.image_name}"
   format = var.format
 }
 
