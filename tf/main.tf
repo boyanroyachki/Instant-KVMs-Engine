@@ -29,7 +29,7 @@ data "template_file" "user_data" {
     user_password = var.user_password
     user_groups   = var.user_groups
     fqdn          = "${var.hostname}.${var.domain}"
-    public_key    = file("${path.module}/.ssh/id_ed25519.pub")
+    # public_key    = file("${path.module}/.ssh/id_ed25519.pub")
   }
 }
 
