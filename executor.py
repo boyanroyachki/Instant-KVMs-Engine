@@ -45,7 +45,7 @@ def main():
                 tf_file.write(f'  default = "{value}"\n')
             tf_file.write("}\n\n")
 
-    print(f"{file_path} has been generated successfully.")
+    # print(f"{file_path} has been generated successfully.")
 
 if __name__ == "__main__":
     main()
