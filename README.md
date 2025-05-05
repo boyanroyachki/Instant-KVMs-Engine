@@ -2,6 +2,7 @@
 
 SSH via key
 ```shell
+    mkdir .ssh
     ssh -i .ssh/id_ed25519 <USER>@<IP_ADDRESS>
 ```
 
