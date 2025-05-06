@@ -6,8 +6,9 @@
 Ensure your SSH key is available:
 
 ```bash
-mkdir -p ~/.ssh
-ssh -i ~/.ssh/id_ed25519 <USER>@<IP_ADDRESS>
+mkdir -p .ssh
+ssh-keygen -t ed25519 -b 4096 -f .ssh/id_ed25519
+ssh -i .ssh/id_ed25519 <USER>@<IP_ADDRESS>
 ```
 
 ## 📥 Download desired Cloud Image
