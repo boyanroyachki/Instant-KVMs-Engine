@@ -36,3 +36,4 @@ terraform.rc
 # ISO images
 *.img
 .ssh/*
+.idea
